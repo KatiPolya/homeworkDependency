@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ShowAfishaManagerTest {
-    AfishaManager manager = new AfishaManager(4);
+    AfishaManager manager = new AfishaManager(5);
 
     @Test
     void show() {
