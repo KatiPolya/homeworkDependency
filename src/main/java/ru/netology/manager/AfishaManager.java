@@ -1,5 +1,9 @@
+package ru.netology.manager;
+
+import ru.netology.domain.AfishaFilm;
+
 public class AfishaManager {
-    private int resultLength;
+    private int resultLength = 10;
     private AfishaFilm[] films = new AfishaFilm[0];
 
     public AfishaManager(int resultLength) {
@@ -23,14 +27,15 @@ public class AfishaManager {
     }
 
     public AfishaFilm[] show() {
+        int numberOfFilms;
         AfishaFilm[] films = findAll();
         if (films.length < resultLength) {
-            resultLength = films.length;
+            numberOfFilms = films.length;
         } else {
-            resultLength = resultLength;
+            numberOfFilms = resultLength;
         }
-        AfishaFilm[] result = new AfishaFilm[resultLength];
-        for (int i = 0; i < result.length; i++) {
+        AfishaFilm[] result = new AfishaFilm[numberOfFilms];
+        for (int i = 0; i < numberOfFilms; i++) {
             int index = films.length - i - 1;
             result[i] = films[index];
         }

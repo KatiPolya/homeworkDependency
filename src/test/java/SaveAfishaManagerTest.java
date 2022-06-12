@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.Test;
+import ru.netology.domain.AfishaFilm;
+import ru.netology.manager.AfishaManager;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
